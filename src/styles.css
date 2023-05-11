@@ -1,0 +1,11 @@
+:root {
+  --heading-font-family: "Prata", serif;
+  --body-font-family: "Raleway", sans-serif;
+}
+h1,
+h2 {
+  font-family: var(--heading-font-family);
+}
+p {
+  font-family: var(--body-font-family);
+}

@@ -1,23 +1,27 @@
 :root {
   --body-font-family: "Raleway", sans-serif;
+  --northern-lights-pink: rgb(226, 197, 207);
+  --body-text-color: #e3efeb;
 }
 header {
   background-image: url("../images/northern-lights.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--body-text-color);
   text-align: center;
 }
 body {
   font-family: var(--body-font-family);
   background-color: rgb(17, 17, 18);
+  color: var(--body-text-color);
 }
 header h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 1.3;
   margin: 0;
-  text-shadow: 5px 5px 5px #e2c5cf;
+  text-shadow: 0px 0px 10px rgb(226, 197, 207, 0.8),
+    0px 0px 10px rgb(226, 197, 207, 0.8), 0px 0px 10px rgb(226, 197, 207, 0.8);
 }
 header h2 {
   font-weight: 400;
@@ -25,7 +29,7 @@ header h2 {
   line-height: 1.5;
   padding: 0 0 200px 0;
   margin: 0;
-  color: #e2c5cf;
+  color: var(--northern-lights-pink);
 }
 header h3 {
   font-weight: 400;
@@ -33,7 +37,11 @@ header h3 {
   line-height: 1.5;
   padding: 200px 0 0 0;
   margin: 0;
-  color: #e2c5cf;
+  color: var(--northern-lights-pink);
+}
+section p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 footer {
   background-image: linear-gradient(
@@ -43,14 +51,15 @@ footer {
     url("../images/ice-boulders.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #e2c5cf;
+  color: var(--northern-lights-pink);
 }
 footer h4 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   padding: 20px 0 0 0;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 footer p {
   font-weight: 400;
@@ -66,17 +75,37 @@ footer li {
   opacity: 0.8;
 }
 footer a {
-  color: #e2c5cf;
+  color: var(--northern-lights-pink);
+  text-decoration: none;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-.grid {
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 40px auto;
+}
+.iceland-map-photo {
+  display: block;
+  margin: 10px 0 10px auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+.grid-footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 40px;
-  margin: 0 0 0 40px;
+  margin: 0 40px;
+}
+.home-page-link {
+  text-decoration: underline;
+}
+.home-page-link:hover,
+footer a:hover {
+  color: var(--body-text-color);
 }
 .social-icons {
   text-align: center;
@@ -84,11 +113,11 @@ footer a {
 .icon-index {
   padding: 10px;
   margin: 30px auto;
-  color: #e2c5cf;
+  color: var(--northern-lights-pink);
   transition: 200ms all ease-in-out;
 }
 .icon-index:hover {
-  color: white;
+  color: var(--body-text-color);
 }
 @media (max-width: 960px) {
   header h1 {
@@ -100,5 +129,24 @@ footer a {
   header h3 {
     font-size: 14px;
     padding: 30px 0 0 0;
+  }
+  section p,
+  section h3 {
+    text-align: center;
+  }
+  footer {
+    padding: 10px 0 0;
+  }
+  footer h4 {
+    padding: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .iceland-map-photo {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 }

@@ -26,9 +26,9 @@ header h1 {
 }
 header h2 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 1.5;
-  padding: 0 0 200px 0;
+  padding: 140px 0 0 0;
   margin: 0;
   color: var(--northern-lights-pink);
 }
@@ -95,6 +95,11 @@ footer a {
   margin: 10px 0 10px auto;
   max-width: 500px;
 }
+.why-iceland h3 {
+  color: var(--northern-lights-pink);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
 .why-iceland p {
   max-width: 500px;
 }
@@ -104,6 +109,11 @@ footer a {
   margin: 0 auto;
   padding: 100px;
   background-color: rgba(17, 17, 18, 0.4);
+}
+.experiences-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--northern-lights-pink);
 }
 .card-grid {
   display: grid;
@@ -117,6 +127,7 @@ footer a {
   color: var(--body-text-color);
   text-align: center;
 }
+
 .card h3 {
   text-transform: uppercase;
   text-align: left;
@@ -136,6 +147,22 @@ footer a {
 .card-photo {
   max-height: 200px;
   margin-top: 20px;
+}
+.btn {
+  display: block;
+  background-color: rgba(17, 17, 18, 0.4);
+  color: var(--body-text-color);
+  text-decoration: none;
+  margin: 10px 20px 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--body-text-color);
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: var(--northern-lights-pink);
+  color: #343435;
+  transition: all 200ms;
+  font-weight: 700;
 }
 .grid-footer {
   display: grid;
@@ -173,7 +200,9 @@ footer a:hover {
     font-size: 14px;
     padding: 30px 0 0 0;
   }
-  section p,
+  section p {
+    text-align: center;
+  }
   section h3 {
     text-align: center;
   }

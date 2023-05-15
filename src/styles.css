@@ -114,6 +114,8 @@ footer a {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--northern-lights-pink);
+  padding: 0 0 40px;
+  margin: 0;
 }
 .card-grid {
   display: grid;
@@ -163,6 +165,19 @@ footer a {
   color: #343435;
   transition: all 200ms;
   font-weight: 700;
+}
+.embed-map {
+  padding: 20px;
+}
+.photo-gallery h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--northern-lights-pink);
+}
+.grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 .grid-footer {
   display: grid;

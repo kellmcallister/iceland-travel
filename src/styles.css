@@ -163,7 +163,7 @@ footer a {
 .btn:hover {
   background-color: var(--northern-lights-pink);
   color: #343435;
-  transition: all 200ms;
+  transition: 200ms all ease-in-out;
   font-weight: 700;
 }
 .embed-map {
@@ -173,17 +173,33 @@ footer a {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--northern-lights-pink);
+  text-align: center;
+  margin: 100px auto 40px;
 }
 .grid-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px 100px;
+}
+.gallery-photo {
+  margin: 0 auto;
+  height: 210px;
+  filter: grayscale(80%);
+}
+.gallery-photo:hover {
+  scale: 180%;
+  transition: 400ms all ease-in-out;
+  filter: none;
+  z-index: 1;
 }
 .grid-footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 40px;
-  margin: 0 120px;
+  margin: 0 180px;
 }
 .home-page-link {
   text-decoration: underline;
